@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16C68" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="HeaderView" customModule="KalpeshTest" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vjp-WS-h1R">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z4W-np-XP0">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Vjp-WS-h1R" secondAttribute="trailing" id="67f-K7-Q8A"/>
+                <constraint firstItem="Vjp-WS-h1R" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="A8t-1N-Oux"/>
+                <constraint firstAttribute="bottom" secondItem="Vjp-WS-h1R" secondAttribute="bottom" id="E4G-3V-b1z"/>
+                <constraint firstAttribute="bottom" secondItem="Z4W-np-XP0" secondAttribute="bottom" id="Fcf-xS-YgR"/>
+                <constraint firstItem="Z4W-np-XP0" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="bMV-qw-afQ"/>
+                <constraint firstItem="Vjp-WS-h1R" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="c4W-X8-g6X"/>
+                <constraint firstAttribute="trailing" secondItem="Z4W-np-XP0" secondAttribute="trailing" id="rwx-Cl-k72"/>
+                <constraint firstItem="Z4W-np-XP0" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="sBA-CN-mdG"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="btnAction" destination="Z4W-np-XP0" id="imE-0K-Stq"/>
+                <outlet property="lblHeaderTitle" destination="Vjp-WS-h1R" id="cLT-Xr-BSr"/>
+            </connections>
+            <point key="canvasLocation" x="5" y="-77"/>
+        </view>
+    </objects>
+</document>
